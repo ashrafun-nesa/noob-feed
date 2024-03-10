@@ -30,6 +30,27 @@ body {
     @apply mx-auto w-full  xl:w-10/12 2xl:w-8/12 px-5 md:px-10 xl:px-0 mb-0 md:mb-2;
   }
 
+  .container_section_md {
+    @apply mx-auto w-full xl:w-4/5  3xl:w-[70%] px-4;
+  }
+
+  .custom-footer {
+    @apply grid gap-4 grid-cols-12  lg:grid-cols-12 md:grid-cols-12  pt-10 pb-5;
+
+    .footer-aside {
+      @apply col-span-12 lg:col-span-5 md:col-span-12 flex flex-col justify-between mb-2;
+    }
+    .footer-nav {
+      @apply col-span-6 lg:col-span-2 md:col-span-4   flex flex-col;
+    }
+    .footer-newsletter {
+      @apply sm:grid-cols-6 lg:col-span-3 md:col-span-4 grid gap-2 mb-2;
+    }
+    .footer-copyright {
+      @apply col-span-12 lg:col-span-12 md:col-span-12 border-t-2  border-light-primary py-2 border-opacity-5;
+    }
+  }
+
   .nav-bar {
     .nav-item {
       .dropdown {
