@@ -202,6 +202,44 @@ body {
 
 }
 
+.review-overlay {
+  background: linear-gradient(180deg, #00000000 28.75%, rgba(0, 0, 0, 0.00) 28.76%, #000000D9 60.8%); 
+}
+
+
+///percentage circle
+
+.circle-bg {
+  fill: #1C1C1C;
+  stroke: #3D3D3D;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart .circle {
+  stroke: #DE0006;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+
 @layer base {
   ul {
     li {
