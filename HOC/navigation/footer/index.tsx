@@ -11,41 +11,44 @@ const Footer = ({ data, setting }: Props) => {
   return (
     <footer className="bg-dark-primary text-light-primary">
       <section className="container_section_md custom-footer pt-11">
-        <aside className="footer-aside">
-          <div className="logo mb-5">
-            <Image src={FooterLogo} alt="footer-logo" />
-            <p className="mt-3 md:w-4/5">Aliquam vehicula luctus sodales lobortis justo mi sociis suscipit elementum, nisl euismod venenatis taciti.</p>
-          </div>
-          <div>
-            <header className="font-bold mb-5">Follow us</header>
-            <div className="flex mt-5 gap-4 ">
-              <TwitterIcon />
-              <YoutubeIcon />
-              <span><Image src={GamesCreed} alt="GamesCreed" /></span>
-              <CriticplexIcon />
-
+        <div className="flex lg:flex-row flex-col gap-10 mb-6">
+          <aside className="footer-aside">
+            <div className="logo mb-5">
+              <Image src={FooterLogo} alt="footer-logo" />
+              <p className="mt-3 max-w-[300px]">Aliquam vehicula luctus sodales lobortis justo mi sociis suscipit elementum, nisl euismod venenatis taciti.</p>
             </div>
-          </div>
+            <div>
+              <header className="font-bold mb-5">Follow us</header>
+              <div className="flex mt-5 gap-4 ">
+                <TwitterIcon />
+                <YoutubeIcon />
+                <span><Image src={GamesCreed} alt="GamesCreed" /></span>
+                <CriticplexIcon />
 
-        </aside>
-        <nav className="footer-nav">
-          {" "}
-          <header className="font-bold mb-5">Most Popular</header>
-          <p className="my-1">Switch Surpasses 1.2 Billion S..</p>
-        </nav>
-        <nav className="footer-nav">
-          {" "}
-          <header className="font-bold mb-5">Coming Soon</header>
+              </div>
+            </div>
 
-        </nav>
-        <nav className="footer-nav">
-          <header className="font-bold mb-5">INFORMATION</header>
+          </aside>
+          <nav className="footer-nav">
+            {" "}
+            <header className="font-bold mb-5">Most Popular</header>
+            <p className="my-1">Switch Surpasses 1.2 Billion S..</p>
+          </nav>
+          <nav className="footer-nav">
+            {" "}
+            <header className="font-bold mb-5">Coming Soon</header>
+
+          </nav>
+          <nav className="footer-nav">
+            <header className="font-bold mb-5">INFORMATION</header>
 
 
-          <p className=" my-1">
-            About
-          </p>
-        </nav>
+            <p className=" my-1">
+              About
+            </p>
+          </nav>
+        </div>
+
         <aside className="footer-copyright">
           <p>PC</p>
           <p>PS5</p>

@@ -35,19 +35,14 @@ body {
   }
 
   .custom-footer {
-    @apply grid gap-4 grid-cols-12  lg:grid-cols-12 md:grid-cols-12  pt-10 pb-5;
-
-    .footer-aside {
-      @apply col-span-12 lg:col-span-5 md:col-span-12 flex flex-col justify-between mb-2;
-    }
-    .footer-nav {
-      @apply col-span-6 lg:col-span-2 md:col-span-4   flex flex-col;
-    }
-    .footer-newsletter {
-      @apply sm:grid-cols-6 lg:col-span-3 md:col-span-4 grid gap-2 mb-2;
-    }
+    
     .footer-copyright {
-      @apply col-span-12 lg:col-span-12 md:col-span-12 border-t-2  border-light-primary py-2 border-opacity-5 flex justify-center gap-10 flex-wrap;
+      @apply border-t-2  border-light-primary py-2 border-opacity-5 flex justify-center gap-x-10 gap-y-3 flex-wrap;
+    }
+
+    .footer-aside, 
+    .footer-nav {
+      @apply lg:w-1/4 w-full;
     }
     .footer-copyright p {
       position: relative;
@@ -135,16 +130,10 @@ body {
     gap: 30px;
   }
 
-  .mobile-navbar .site-btn .sign-btn, 
   .mobile-navbar nav a{
     font-size: 20px;
   }
 
-
-  .mobile-navbar .site-btn .sign-btn {
-    padding: 12px 20px;
-    transition: all 0.3s ease;
-  }
 
   .cross-btn {
     position: absolute;
@@ -204,6 +193,23 @@ body {
 
 .review-overlay {
   background: linear-gradient(180deg, #00000000 28.75%, rgba(0, 0, 0, 0.00) 28.76%, #000000D9 60.8%); 
+}
+
+
+////feature section
+
+.feature-section {
+  .news {
+    color: #007B08;
+  }
+
+  .review {
+    color: #0160A9;
+  }
+
+  .blogs {
+    color: #F85100;
+  }
 }
 
 
