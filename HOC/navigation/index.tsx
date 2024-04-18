@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Header from "./header";
 import dynamic from "next/dynamic";
 const Footer = dynamic(() => import("./footer"));
@@ -21,4 +22,4 @@ const Navigation = async ({ children }: Props) => {
   }
 };
 
-export default Navigation;
+export default memo(Navigation);
