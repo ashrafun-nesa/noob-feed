@@ -1,6 +1,10 @@
 import Image from "next/image";
 import InnerImage from "../../../../assets/images/inner-page.png";
+import GameInfo from "../../../../assets/images/game-info.png";
 import StarRating from "../../../../assets/images/star-rating.png";
+import GoogleAds from "@/components/others/googleAds";
+import LinkItems from "@/components/others/Link/LinkList";
+import CustomLink from "@/components/others/Link";
 
 const SingleReview = () => {
   return (
@@ -21,12 +25,12 @@ const SingleReview = () => {
           <p className="text-[18px] leading-[1.56] mb-6">So to advance through this encounter, you need both the Dam&apos;s Gift buff and the Sire&apos;s Obligation buff. When you pick up both, they combine into a new buff called Crowned by Dragons. The good news is that Crowned by Dragons will protect you from orange Unwelcome mist and let you kill Obdurate Phalanxes. As before, though, you need to continually reclaim the buff to keep the timer from running out. If the buff timer expires, the barrier lock will reset and you&apos;ll need to start over. However, touching either the blue or the orange well will restore the Crowned by Dragons timer. Once you have both buffs, either well will refresh it, so you no longer have to worry about touching both.</p>
           <p className="text-base mb-1"><span className="text-[#DE0006]">Critic Name</span> </p>
           <p className="text-base pb-4 mb-4 border-b-[1px] border-[#E8E8E8]">Editor, NoobFeed</p>
-          <div className="lg:my-16 my-9">
-            <div className="bg-gradient-to-r from-[#2669B1] to-[#2A3E8C] py-[22px] px-5 text-white relative rounded-[5px] lg:w-[95%]">
+          <div className="lg:mt-16 lg:mb-16 mt-9 mb-0 ">
+            <div className="bg-gradient-to-r from-[#2669B1] to-[#2A3E8C] pb-[22px] md:pt-[22px] pt-[127px] md:mt-0 mt-[120px] px-5 text-white relative rounded-[5px] md:w-[95%]">
               <h3 className="lg:text-[28px] font-semibold leading-[1.29] mb-[10px]">Verdict</h3>
               <Image src={StarRating} alt="" />
-              <p className="text-[18px] leading-[1.56] md:w-[65%] w-full mt-[10px]">Consectetur adipiscing elit conubia quisque, per est nascetur diam sed leo nisi hendrerit volutpat, sagittis turpis cubilia eget ad vivas eleifend tempus. Habitasse torquent justo cursus potenti iaculis primis.</p>
-              <div className="verdict-circular-percentage absolute -right-20 top-1/2 -translate-y-1/2 md:w-[263px] md:h-[263px] h-[239px] w-[239px] md:p-[27px] p-[17px] bg-white rounded-full">
+              <p className="xl:text-[18px] text-base leading-[1.56] md:w-[70%] w-full mt-[10px]">Consectetur adipiscing elit conubia quisque, per est nascetur diam sed leo nisi hendrerit volutpat, sagittis turpis cubilia eget ad vivas eleifend tempus. Habitasse torquent justo cursus potenti iaculis primis.</p>
+              <div className="verdict-circular-percentage absolute lg:-right-20 md:-right-[85px] md:-translate-x-0 right-1/2 translate-x-1/2 md:top-1/2 -top-24 md:-translate-y-1/2 md:w-[263px] md:h-[263px] sm:h-[239px] h-[220px] sm:w-[239px] w-[220px] md:p-[27px] p-[17px] bg-white rounded-full">
                 <svg viewBox="0 0 36 36" className="circular-chart">
                   <path className="circle-bg"
                     d="M18 2.0845
@@ -40,12 +44,94 @@ const SingleReview = () => {
                         a 15.9155 15.9155 0 0 1 0 -31.831"
                   />
                 </svg>
-                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-white text-[89px]">75</p>
+                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-white md:text-[89px] text-[70px]">75</p>
               </div>
             </div>
           </div>
         </div>
-        <div className=" lg:w-1/3 w-full"></div>
+        <div className=" lg:w-1/3 w-full">
+          <div className="lg:py-6 flex flex-col lg:items-start items-center">
+            <GoogleAds />
+            <h3 className="text-[#264FA0] xl:text-3xl text-2xl font-semibold mb-4 mt-10">Game Information</h3>
+            <div className="box-shadow md:p-5 p-4 pb-7 ">
+              <div className="relative">
+                <Image width={356} height={485} src={GameInfo} alt="info-image" />
+                <div className="absolute top-3 right-3">
+                  <div className="single-chart relative md:w-[80px] md:h-[80px] w-[56px] h-[56px] ">
+                    <svg viewBox="0 0 36 36" className="circular-chart">
+                      <path className="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                      <path className="circle"
+                        stroke-dasharray="75, 100"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                      />
+                    </svg>
+                    <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-white md:text-[30px] text-[24px]">75</p>
+                  </div>
+                </div>
+                <h3 className="xl:text-3xl text-2xl font-semibold max-w-[300px] pt-[10px] mb-5">Avatar: Frontiers of Pandora</h3>
+                <p className="mb-4 flex flex-wrap leading-[1]">
+                  <span className="font-semibold tracking-wider">
+                    {" "}
+                    Available On:&nbsp;
+                  </span>{" "}
+                  <CustomLink href="#" className="link text-brand-tertiary link-hover " >
+                    Xbox One
+                  </CustomLink>
+                </p>
+                <p className="mb-4 flex flex-wrap leading-[1]">
+                  <span className="font-semibold tracking-wider">
+                    {" "}
+                    Publisher(s):&nbsp;
+                  </span>{" "}
+                  <CustomLink href="#" className="link text-brand-tertiary link-hover " >
+                    Xbox One
+                  </CustomLink>
+                </p>
+                <p className="mb-4 flex flex-wrap leading-[1]">
+                  <span className="font-semibold tracking-wider">
+                    {" "}
+                    Developer(s):&nbsp;
+                  </span>{" "}
+                  <CustomLink href="#" className="link text-brand-tertiary link-hover " >
+                    Xbox One
+                  </CustomLink>
+                </p>
+                <p className="mb-4 flex flex-wrap leading-[1]">
+                  <span className="font-semibold tracking-wider">
+                    {" "}
+                    Genres:&nbsp;
+                  </span>{" "}
+                  <CustomLink href="#" className="link text-brand-tertiary link-hover " >
+                    Xbox One
+                  </CustomLink>
+                </p>
+                <p className="mb-4 flex flex-wrap leading-[1]">
+                  <span className="font-semibold tracking-wider">
+                    {" "}
+                    Themes:&nbsp;
+                  </span>{" "}
+                  <CustomLink href="#" className="link text-brand-tertiary link-hover " >
+                    Xbox One
+                  </CustomLink>
+                </p>
+                <p className="mb-4 flex flex-wrap leading-[1]">
+                  <span className="font-semibold tracking-wider">
+                    {" "}
+                    Release Date:&nbsp;
+                  </span>{" "}
+                  2013-06-14
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div >
   );
