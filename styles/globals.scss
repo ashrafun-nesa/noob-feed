@@ -204,7 +204,7 @@ body {
   }
 
   .review {
-    color: #0160A9;
+    color: #006DC0;
   }
 
   .blogs {
@@ -268,4 +268,25 @@ body {
   .mob-nav-bar {
     display: flex;
   }
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(to right, #2669B1 , #2A3E8C);
+  cursor: pointer;
+  border-radius: 50px;
+  border: 4px solid #B6B6B6;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  background: linear-gradient(to right, #2669B1 , #2A3E8C);
+  border-radius: 50px;
+  border: 4px solid #B6B6B6;
 }

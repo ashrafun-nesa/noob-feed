@@ -1,6 +1,6 @@
 import FeaturedSection from "./featuredSection";
 
-const ReviewsPage = () => {
+const NewsPage = () => {
   return (
     <div className="container_section">
       <FeaturedSection />
@@ -8,4 +8,4 @@ const ReviewsPage = () => {
   );
 };
 
-export default ReviewsPage;
+export default NewsPage;
