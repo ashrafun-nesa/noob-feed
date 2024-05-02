@@ -200,6 +200,10 @@ body {
     }
   }
 
+  .full-screen {
+    min-height: calc(100vh - 99px);
+  }
+
 }
 
 .review-overlay {
@@ -292,6 +296,10 @@ body {
 
   .mob-nav-bar {
     display: flex;
+  }
+
+  .full-screen {
+    min-height: calc(100vh - 86px);
   }
 }
 
