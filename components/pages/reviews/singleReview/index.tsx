@@ -5,6 +5,8 @@ import StarRating from "../../../../assets/images/star-rating.png";
 import GoogleAds from "@/components/others/googleAds";
 import LinkItems from "@/components/others/Link/LinkList";
 import CustomLink from "@/components/others/Link";
+import ChatIcon from "@/assets/icons/ChatIcon";
+import FlagIcon from "@/assets/icons/FlagIcon";
 
 const SingleReview = () => {
   return (
@@ -25,7 +27,7 @@ const SingleReview = () => {
           <p className="text-[18px] leading-[1.56] mb-6">So to advance through this encounter, you need both the Dam&apos;s Gift buff and the Sire&apos;s Obligation buff. When you pick up both, they combine into a new buff called Crowned by Dragons. The good news is that Crowned by Dragons will protect you from orange Unwelcome mist and let you kill Obdurate Phalanxes. As before, though, you need to continually reclaim the buff to keep the timer from running out. If the buff timer expires, the barrier lock will reset and you&apos;ll need to start over. However, touching either the blue or the orange well will restore the Crowned by Dragons timer. Once you have both buffs, either well will refresh it, so you no longer have to worry about touching both.</p>
           <p className="text-base mb-1"><span className="text-[#DE0006]">Critic Name</span> </p>
           <p className="text-base pb-4 mb-4 border-b-[1px] border-[#E8E8E8]">Editor, NoobFeed</p>
-          <div className="lg:mt-16 lg:mb-16 mt-9 mb-0 ">
+          <div className="lg:mt-16 lg:mb-16 my-9">
             <div className="bg-gradient-to-r from-[#2669B1] to-[#2A3E8C] pb-[22px] md:pt-[22px] pt-[127px] md:mt-0 mt-[120px] px-5 text-white relative rounded-[5px] md:w-[95%]">
               <h3 className="lg:text-[28px] font-semibold leading-[1.29] mb-[10px]">Verdict</h3>
               <Image src={StarRating} alt="" />
@@ -48,6 +50,55 @@ const SingleReview = () => {
               </div>
             </div>
           </div>
+          <div>
+            <div className="flex items-center gap-3 lg:mb-10 mb-7 ">
+              <ChatIcon />
+              <h5 className="lg:text-[30px] text-[24px] font-semibold">3 Comments</h5>
+            </div>
+            <div className="comment-wrapper flex lg:gap-5 gap-3">
+              <div className="profile-pic lg:w-[49px] lg:h-[49px] w-[30px] h-[30px] rounded-full bg-[#E4E4E4]"></div>
+              <div className="comment-section">
+                <div className="lg:p-5 p-4 pt-4 bg-white border-[1px] border-[#E1E9F1] rounded-[5px] relative">
+                  <div className="text-[#262626] flex items-center justify-between mb-2">
+                    <p className="lg:text-[18px] text-[16px] font-semibold">Critic Name</p>
+                    <p className="lg:text-[16px] text-[14px]">1 day ago</p>
+                  </div>
+                  <p className="lg:text-[16px] text-[14px] leading-[1.8] w-[99%]">Consectetur adipiscing elit conubia quisque, per est nascetur diam sed leo nisi hendrerit volutpat, sagittis turpis cubilia eget ad vivamus eleifend tempus. Habitasse torquent justo cursus potenti iaculis primis nisi sociis commodo.</p>
+                  <span className="absolute right-3 bottom-[14px]"><FlagIcon /></span>
+                </div>
+                <span className="pl-5 mt-[10px] inline-block lg:text-[18px] text-[16px] font-semibold cursor-pointer">Reply</span>
+              </div>
+            </div>
+            <div className="comment-wrapper flex lg:gap-5 gap-3">
+              <div className="lg:w-[49px] lg:h-[49px] w-[30px] h-[30px]">
+              </div>
+              <div className="comment-section flex lg:gap-5 gap-3">
+                <div className="profile-pic lg:w-[39px] lg:h-[39px] w-[25px] h-[25px] rounded-full bg-[#E4E4E4]"></div>
+                <div className="reply-section">
+                  <div className="lg:p-5 p-4 pt-4 bg-white border-[1px] border-[#E1E9F1] rounded-[5px] relative">
+                    <div className="text-[#262626] flex items-center justify-between mb-2">
+                      <p className="lg:text-[18px] text-[16px] font-semibold">Critic Name</p>
+                      <p className="lg:text-[16px] text-[14px]">1 day ago</p>
+                    </div>
+                    <p className="lg:text-[16px] text-[14px] leading-[1.8] w-[99%]">Consectetur adipiscing elit conubia quisque, per est nascetur diam sed leo nisi hendrerit volutpat, sagittis turpis cubilia eget ad vivamus eleifend tempus. Habitasse torquent justo cursus potenti iaculis primis nisi sociis commodo.</p>
+                    <span className="absolute right-3 bottom-[14px]"><FlagIcon /></span>
+                  </div>
+                  <span className="pl-5 mt-[10px] inline-block lg:text-[18px] text-[16px] font-semibold cursor-pointer">Reply</span>
+
+                </div>
+              </div>
+            </div>
+            <div className="comment-wrapper flex lg:gap-5 gap-3">
+              <div className="profile-pic lg:w-[49px] lg:h-[49px] w-[30px] h-[30px] rounded-full bg-[#E4E4E4]"></div>
+              <div className="comment-section">
+                <textarea className="lg:text-[16px] text-[14px] w-full mb-5 lg:p-5 p-4 pt-4 bg-white border-[1px] border-[#E1E9F1] rounded-[5px] relative outline-none" rows={3} placeholder=" Start the discussion...">
+                </textarea>
+                <div className="flex justify-end">
+                  <button className="bg-gradient-to-r from-[#2669B1] to-[#2A3E8C] lg:py-4 lg:px-8 px-6 py-3 text-white font-semibold lg:text-[18px] text-[16px} rounded-[5px]">Comment</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className=" lg:w-1/3 w-full">
           <div className="lg:py-6 flex flex-col lg:items-start items-center">
@@ -57,7 +108,7 @@ const SingleReview = () => {
               <div className="relative">
                 <Image width={356} height={485} src={GameInfo} alt="info-image" />
                 <div className="absolute top-3 right-3">
-                  <div className="single-chart relative md:w-[80px] md:h-[80px] w-[56px] h-[56px] ">
+                  <div className="single-chart relative md:w-[80px] md:h-[80px] w-[56px] h-[56px]">
                     <svg viewBox="0 0 36 36" className="circular-chart">
                       <path className="circle-bg"
                         d="M18 2.0845

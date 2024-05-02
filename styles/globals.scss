@@ -17,6 +17,7 @@
 
 body {
   color: #363636;
+  background-color: #F8F8F8;
 }
 
 @layer utilities {
@@ -189,6 +190,16 @@ body {
     }
   }
 
+  .comment-wrapper {
+    margin-bottom: 20px;
+    .comment-section {
+      width: calc(100% - 70px);
+    }
+    .reply-section {
+      width: calc(100% - 60px);
+    }
+  }
+
 }
 
 .review-overlay {
@@ -257,8 +268,22 @@ body {
       @apply text-base;
     }
   }
+
+  textarea {
+    resize: none;
+  }
 }
 
+
+@media only screen and (max-width: 1024px) {
+  .comment-wrapper .comment-section {
+    width: calc(100% - 42px);
+  }
+
+  .comment-wrapper .reply-section {
+    width: calc(100% - 38px);
+  }
+}
 
 @media only screen and (max-width: 915px) {
   .desktop-nav-bar {
