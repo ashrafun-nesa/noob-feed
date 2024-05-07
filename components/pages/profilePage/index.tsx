@@ -28,7 +28,7 @@ const Profile = () => {
               </div>
             </div>
           </div>
-          <div className="tab-list flex flex-wrap lg:justify-start justify-center border-b-2 border-[#E9E9E9]">
+          <div className="tab-list flex flex-wrap lg:justify-start justify-center ">
             <span className="tab-item ">About</span>
             <span className="tab-item">Overview</span>
             <span className="tab-item active">Activities</span>
