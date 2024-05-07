@@ -204,6 +204,45 @@ body {
     min-height: calc(100vh - 99px);
   }
 
+  .tab-list {
+    padding: 40px 0 16px;
+    .tab-item {
+      padding: 2px 40px ;
+      font-size: 18px;
+      // line-height: 1;
+      font-weight: 600;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #E9E9E9;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+
+      &.active {
+        color: #006DC0;
+
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          bottom: -18px;
+          left: 0;
+          background-color: #006DC0;
+        }
+      }
+    }
+  }
+
 }
 
 .review-overlay {
@@ -286,6 +325,19 @@ body {
 
   .comment-wrapper .reply-section {
     width: calc(100% - 38px);
+  }
+
+  .tab-list {
+    padding-bottom: 5px;
+  }
+
+  .tab-list .tab-item {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .tab-list .tab-item.active::before {
+    bottom: -7px;
   }
 }
 
