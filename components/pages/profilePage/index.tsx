@@ -1,5 +1,11 @@
 import FollowIcon from "@/assets/icons/FollowIcon";
 import MessageIcon from "@/assets/icons/MessageIcon";
+import EpicIcon from "@/assets/icons/demo/EpicIcon";
+import NintendoIcon from "@/assets/icons/demo/NintendoIcon";
+import PlaystationIcon from "@/assets/icons/demo/PlaystationIcon";
+import SteamIcon from "@/assets/icons/demo/SteamIcon";
+import XboxIcon from "@/assets/icons/demo/XboxIcon";
+import CustomLink from "@/components/others/Link";
 
 const Profile = () => {
   return (
@@ -51,6 +57,48 @@ const Profile = () => {
             <div className="lg:w-[59px] lg:h-[59px] w-[52px] h-[52px] bg-[#EBEBEB]"></div>
             <div className="lg:w-[59px] lg:h-[59px] w-[52px] h-[52px] bg-[#EBEBEB]"></div>
             <div className="lg:w-[59px] lg:h-[59px] w-[52px] h-[52px] bg-[#EBEBEB] flex items-center justify-center text-2xl">+4</div>
+          </div>
+          <div>
+            <p className="mb-4 flex flex-wrap leading-[1]">
+              <span className="font-semibold tracking-wider flex items-center gap-[10px]">
+                <PlaystationIcon />
+                {" "}
+                Playstation:&nbsp;
+              </span>{" "}
+              PlayStation _ID
+            </p>
+            <p className="mb-4 flex flex-wrap leading-[1]">
+              <span className="font-semibold tracking-wider flex items-center gap-[10px]">
+                <XboxIcon />
+                {" "}
+                Xbox:&nbsp;
+              </span>{" "}
+              Xbox _ID
+            </p>
+            <p className="mb-4 flex flex-wrap leading-[1]">
+              <span className="font-semibold tracking-wider flex items-center gap-[10px]">
+                <NintendoIcon />
+                {" "}
+                Nintendo Switch:&nbsp;
+              </span>{" "}
+              Switch _ID
+            </p>
+            <p className="mb-4 flex flex-wrap leading-[1]">
+              <span className="font-semibold tracking-wider flex items-center gap-[10px]">
+                <SteamIcon />
+                {" "}
+                Steam:&nbsp;
+              </span>{" "}
+              Steam _ID
+            </p>
+            <p className="mb-4 flex flex-wrap leading-[1]">
+              <span className="font-semibold tracking-wider flex items-center gap-[10px]">
+                <EpicIcon />
+                {" "}
+                Epic:&nbsp;
+              </span>{" "}
+              Epic  _ID
+            </p>
           </div>
         </div>
       </div>
