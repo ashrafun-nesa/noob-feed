@@ -276,6 +276,11 @@ body {
 ////feature section
 
 .feature-section {
+
+  .news-feature {
+    width: calc(100% / 2 - 15px);
+  }
+
   .news {
     color: #007B08;
   }
@@ -355,16 +360,22 @@ body {
   }
 
   .tab-list .tab-item {
-    padding: 12px 10px;
+    padding: 5px 10px;
     font-size: 14px;
 
-    &.message-tab {
-
-    }
+    
   }
 
   .tab-list .tab-item.active::before {
-    bottom: -7px;
+    bottom: -8px;
+  }
+
+  .tab-list .tab-item.message-tab.active::before {
+    bottom: -9px;
+  }
+
+  .feature-section .news-feature {
+    width: 100%;
   }
 }
 
@@ -381,8 +392,13 @@ body {
     min-height: calc(100vh - 86px);
   }
 
+  .tab-list::after {
+    bottom: 8px;
+  }
+
   .tab-list .tab-item {
     width: calc(100% / 3);
+    margin: 12px 0;
   }
 }
 

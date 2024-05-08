@@ -30,8 +30,8 @@ const Profile = () => {
           </div>
           <div className="tab-list flex flex-wrap lg:justify-start justify-center ">
             <span className="tab-item ">About</span>
-            <span className="tab-item">Overview</span>
-            <span className="tab-item active">Activities</span>
+            <span className="tab-item active">Overview</span>
+            <span className="tab-item ">Activities</span>
             <span className="tab-item ">Following</span>
             <span className="tab-item">Report User</span>
           </div>
