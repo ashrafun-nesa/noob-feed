@@ -266,6 +266,14 @@ body {
     }
   }
 
+  .single-notification {
+    padding: 18px 60px 16px;
+    margin-bottom: 1px;
+    &.unseen {
+      background-color: #F2F2F2;
+    }
+  }
+
 }
 
 .review-overlay {
@@ -376,6 +384,10 @@ body {
 
   .feature-section .news-feature {
     width: 100%;
+  }
+
+  .single-notification { 
+    padding: 18px 16px 16px;
   }
 }
 
