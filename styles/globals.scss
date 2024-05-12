@@ -313,6 +313,42 @@ body {
     }
   }
 
+  .heading-1 {
+    font-size: 44px;
+    color: #264FA0;
+    line-height: 1.23;
+    font-weight: 600;
+  }
+
+  .heading-2 {
+    font-size: 36px;
+    line-height: 1.23;
+    color: #264FA0;
+    font-weight: 600;
+  }
+
+  .heading-3 {
+    font-size: 30px;
+    line-height: 1.33;
+    font-weight: 600;
+  }
+
+  .heading-4 {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 600;
+  }
+  .heading-5 {
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 600;
+  }
+
+  .paragraph {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
 }
 
 .review-overlay {
@@ -435,6 +471,23 @@ body {
     width: 24px;
     height: 24px;
   }
+  
+  .heading-1 {
+    font-size: 30px;
+  }
+
+  .heading-2 {
+    font-size: 26px;
+  }
+
+  .heading-3 {
+    font-size: 22px;
+  }
+
+  .heading-4 {
+    font-size: 18px;
+  }
+
 }
 
 @media only screen and (max-width: 915px) {
