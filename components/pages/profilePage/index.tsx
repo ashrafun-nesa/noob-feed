@@ -14,6 +14,7 @@ import SteamIcon from "@/assets/icons/demo/SteamIcon";
 import XboxIcon from "@/assets/icons/demo/XboxIcon";
 import CustomLink from "@/components/others/Link";
 import Twitter from "@/assets/icons/Twitter";
+import InstagramIcon from "@/assets/icons/InstagramIcon";
 
 const Profile = () => {
   return (
@@ -330,7 +331,7 @@ const Profile = () => {
                     aria-label={"twitch"}
                     type="text"
                     name="twitch"
-                    className={`input-field w-full px-2 pb-[10px] border-b-[1px] border-[#B4B4B4] text-[18px] outline-none bg-transparent`}
+                    className={`input-field w-full px-2 pb-[10px] pr-9 border-b-[1px] border-[#B4B4B4] text-[18px] outline-none bg-transparent`}
                   />
                   <span className="absolute top-1/2 right-3 -translate-y-1/2">
                     <LinkIcon />
@@ -366,51 +367,28 @@ const Profile = () => {
                 <Youtube />
                 <h5 className="md:text-[22px] text-18 sm:flex hidden ">YouTube</h5>
               </div>
-              {/* {!showSocialMedia.youtube ? (
-                <div className="flex items-center gap-3">
-                  <div className="relative ">
-                    <input
-                      id="youtube"
-                      aria-label={"youtube"}
-                      type="text"
-                      name="youtube"
-                      className={`input-field w-full py-2 px-5 !pr-9 ${theme == "dark" ? "bg-[#212535]" : "bg-[#D4E1F0CC]"
-                        }  sm:text-base text-sm rounded-[10px] outline-none`}
-                      onChange={(e: any) =>
-                        handleUpdateSocialMedia("youtube", e.target.value)
-                      }
-                    />
-                    <span className="absolute top-1/2 right-3 -translate-y-1/2">
-                      <LinkIcon theme={theme} />
-                    </span>
-                  </div>
-                  {socialMedia.youtube && (
-                    <span
-                      className="text-primary font-semibold cursor-pointer"
-                      onClick={() => handleShowSocialMedia("youtube", true)}
-                    >
-                      Submit
-                    </span>
-                  )}
-                </div>
-              ) : (
-                <div className="flex md:gap-10 gap-2 items-center">
-                  <p className="truncate md:w-[180px] w-[154px] md:text-base text-sm" title={socialMedia.youtube}>
-                    {socialMedia.youtube}
-                  </p>
-                  <span
-                    className="cross-icon"
-                    onClick={() => {
-                      handleShowSocialMedia("youtube", false);
-                      handleUpdateSocialMedia("youtube", "");
-                    }}
-                  >
-                    <CrossIcon theme={theme} />
+              <div className="flex items-center gap-3">
+                <div className="relative ">
+                  <input
+                    id="youtube"
+                    aria-label={"youtube"}
+                    type="text"
+                    name="youtube"
+                    className={`input-field w-full px-2 pb-[10px] pr-9 border-b-[1px] border-[#B4B4B4] text-[18px] outline-none bg-transparent`}
+                  />
+                  <span className="absolute top-1/2 right-3 -translate-y-1/2">
+                    <LinkIcon />
                   </span>
                 </div>
-              )} */}
+                <span
+                  className="text-primary font-semibold cursor-pointer"
+                >
+                  Submit
+                </span>
+              </div>
+
             </div>
-            {/* <div className="added-role lg:px-[70px] md:px-10 flex justify-between gap-2 items-center">
+            <div className="added-role lg:px-[70px] md:px-10 flex justify-between gap-2 items-center">
               <div className="flex gap-3 social">
                 <InstagramIcon />
                 <h5 className="md:text-[22px] text-18 sm:flex hidden ">
@@ -418,51 +396,23 @@ const Profile = () => {
                 </h5>
               </div>
 
-              {!showSocialMedia.instagram ? (
-                <div className="flex items-center gap-3">
-                  <div className="relative ">
-                    <input
-                      id="instagram"
-                      aria-label={"instagram"}
-                      type="text"
-                      name="instagram"
-                      className={`input-field w-full py-2 px-5 !pr-9 ${theme == "dark" ? "bg-[#212535]" : "bg-[#D4E1F0CC]"
-                        } sm:text-base text-sm rounded-[10px] outline-none`}
-                      onChange={(e: any) =>
-                        handleUpdateSocialMedia("instagram", e.target.value)
-                      }
-                    />
-                    <span className="absolute top-1/2 right-3 -translate-y-1/2">
-                      <LinkIcon theme={theme} />
-                    </span>
-                  </div>
-                  {socialMedia.instagram && (
-                    <span
-                      className="text-primary font-semibold cursor-pointer"
-                      onClick={() => handleShowSocialMedia("instagram", true)}
-                    >
-                      Submit
-                    </span>
-                  )}
-                </div>
-              ) : (
-                <div className="md:text-base text-sm flex md:gap-10 gap-2 items-center">
-                  <p className="truncate md:w-[180px] w-[154px] md:text-base text-sm" title={socialMedia.instagram}>
-                    {socialMedia.instagram}
-                  </p>
-                  <span
-                    className="cross-icon"
-                    onClick={() => {
-                      handleShowSocialMedia("instagram", false);
-                      handleUpdateSocialMedia("instagram", "");
-                    }}
-                  >
-                    <CrossIcon theme={theme} />
-                  </span>
-                </div>
-              )}
-            </div> */}
+              <div className="md:text-base text-sm flex md:gap-10 gap-2 items-center">
+                <p className="truncate md:w-[180px] w-[154px] md:text-base text-sm" title="Instagram">
+                  Instagram
+                </p>
+                <span
+                  className="cross-icon"
+                >
+                  <CrossIcon />
+                </span>
+              </div>
+            </div>
           </div>
+        </div>
+        <div className="flex justify-center lg:mb-16 mb-10">
+          <button type="submit" className="bg-gradient-to-r from-[#2669B1] to-[#2A3E8C] lg:py-4 lg:px-8 px-5 py-3 text-white font-semibold lg:text-[18px] text-[16px} rounded-[5px] tracking-wider flex items-center gap-3 leading-[1]">
+            Update Profile
+          </button>
         </div>
       </div>
     </div>
