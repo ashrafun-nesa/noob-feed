@@ -115,7 +115,7 @@ const DesktopNav = () => {
                     <div className="overlay-wrapper">
                         <div className='login-wrapper relative  max-w-[600px] w-full'>
                             <div className="w-full h-[400px] overflow-y-auto rounded-md">
-                                <button className='cross-btn absolute -right-2 -top-2 w-[30px] h-[30px] rounded-full bg-[#F8F8F8] flex justify-center items-center z-10' onClick={() => setOpenSignup(false)}>
+                                <button className='cross-btn absolute -right-2 -top-2 w-[30px] h-[30px] rounded-full bg-[#F8F8F8] flex justify-center items-center z-10' onClick={() => setOpenLogin(false)}>
                                     <CrossIcon />
                                 </button>
                                 <div className="bg-[#F8F8F8] rounded-md">
