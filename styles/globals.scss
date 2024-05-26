@@ -349,6 +349,25 @@ body {
     line-height: 1.33;
   }
 
+  .overlay-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: all 0.3s ease;
+
+    .cross-btn svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
 }
 
 .review-overlay {
